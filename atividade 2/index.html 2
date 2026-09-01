@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Tecnologia</title>
+    <!-- Conexão com o CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Blog de Tecnologia</h1>
+        <p>Curiosidades e novidades do mundo tech</p>
+    </header>
+
+    <main>
+        <!-- Post 1 -->
+        <article>
+            <img src="https://via.placeholder.com/80" alt="Ícone de tecnologia">
+            <div>
+                <h2>A Origem do Bluetooth</h2>
+                <p class="artigo-autor">Por: Marcelo</p>
+                <p>
+                    Você sabia que o nome Bluetooth é uma homenagem a um rei viking?<br><br>
+                    Harald Bluetooth foi famoso por unificar tribos dinamarquesas, assim como a tecnologia une dispositivos.
+                </p>
+                <!-- Fonte com Link externo que abre em nova aba -->
+                <p class="artigo-fonte">
+                    Fonte: <a href="https://www.techhistory.com" target="_blank">Tech History Museum</a>
+                </p>
+                <button>❤️ <span>0</span></button>
+                <button>👍 <span>0</span></button>
+            </div>
+        </article>
+
+        <!-- Post 2 -->
+        <article>
+            <img src="https://via.placeholder.com/80" alt="Ícone de computador">
+            <div>
+                <h2>O Primeiro Mouse da História</h2>
+                <p class="artigo-autor">Por: Felipe</p>
+                <p>
+                    O primeiro mouse do mundo foi construído em 1964 por Douglas Engelbart.<br><br>
+                    Ele era feito inteiramente de madeira e possuía apenas um único botão!
+                </p>
+                <!-- Fonte com Link externo que abre em nova aba -->
+                <p class="artigo-fonte">
+                    Fonte: <a href="https://www.tnmoc.org/colossus" target="_blank">The National Museum of Computing</a>
+                </p>
+                <button>❤️ <span>0</span></button>
+                <button>👍 <span>0</span></button>
+            </div>
+        </article>
+
+        <!-- Post 3 -->
+        <article>
+            <img src="https://via.placeholder.com/80" alt="Ícone de código">
+            <div>
+                <h2>Por que "Bug" se chama Bug?</h2>
+                <p class="artigo-autor">Por: Ana</p>
+                <p>
+                    O termo "bug" ficou famoso quando uma mariposa de verdade ficou presa nos relés de um computador em 1947.<br><br>
+                    A cientista Grace Hopper colou o inseto no diário de bordo da equipe.
+                </p>
+                <!-- Fonte com Link externo que abre em nova aba -->
+                <p class="artigo-fonte">
+                    Fonte: <a href="https://www.smithsonianmag.com" target="_blank">Smithsonian Institution</a>
+                </p>
+                <button>❤️ <span>0</span></button>
+                <button>👍 <span>0</span></button>
+            </div>
+        </article>
+
+        <!-- Botão Flutuante de Alternância do Tema -->
+        <button class="btn-tema-escuro">🌙</button>
+    </main>
+
+    <!-- Conexão com o JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+/* 1. Variáveis de Cores Globais e Fonte */
+:root {
+    --cor-primaria: #183C63;
+    --cor-secundaria: #3782d2;
+    --cor-fundo: #ffffff;
+    --cor-texto: #151428;
+    --cor-contraste: #f3eef7;
+    --cor-botao: #f9f9f9;
+    --fonte-texto: 'Segoe UI', sans-serif;
+}
+
+/* 2. Variáveis para o Modo Escuro */
+.tema-escuro {
+    --cor-primaria: #c9e3ff;
+    --cor-fundo: #151428;
+    --cor-texto: #ffffff;
+    --cor-contraste: #f3eef7;
+    --cor-secundaria: #3782d2;
+}
+
+/* 3. Transição Suave Universal */
+* {
+    transition: background-color 0.3s ease;
+}
+
+/* 4. Estilos Gerais da Página */
+body {
+    max-width: 100vw;
+    margin: 0;
+    font-family: var(--fonte-texto);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+/* 5. Cabeçalho */
+header {
+    background-color: var(--cor-primaria);
+    color: #ffffff;
+    text-align: center;
+    padding: 24px 16px;
+}
+
+.tema-escuro header p {
+    color: var(--cor-contraste);
+}
+
+/* 6. Layout Principal com Flexbox */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 16px;
+    background-color: var(--cor-fundo);
+}
+
+/* 7. Estilização dos Cards (Article) com Sombra */
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin: 16px;
+    padding: 16px;
+    gap: 16px;
+    flex: 1 1 25%;
+    min-width: 250px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Sombra em vez de borda */
+}
+
+/* Estilização para o Card no Modo Escuro */
+.tema-escuro article {
+    background-color: #1e1d38;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.artigo-autor {
+    font-weight: bold;
+    color: var(--cor-primaria);
+    margin: 4px 0;
+}
+
+.artigo-fonte {
+    font-size: 0.85em;
+    color: #666666;
+    font-style: italic;
+    margin-top: 8px;
+}
+
+/* Estilização dos Links de Fonte */
+a {
+    color: var(--cor-primaria);
+    text-decoration: underline;
+}
+
+.tema-escuro a {
+    color: var(--cor-secundaria);
+}
+
+.tema-escuro p {
+    color: var(--cor-texto);
+}
+
+/* 8. Botões de Curtir/Joinha */
+button {
+    background-color: #e2e8f0;
+    border: 1px solid #cbd5e1;
+    border-radius: 20px;
+    padding: 6px 16px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin: 4px;
+}
+
+/* 9. Botão Flutuante do Tema Escuro */
+.btn-tema-escuro {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    font-size: 32px;
+    padding: 12px;
+    background-color: var(--cor-primaria);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+/* Destaque do botão no modo escuro */
+.tema-escuro .btn-tema-escuro {
+    background-color: var(--cor-secundaria);
+}
